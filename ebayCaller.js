@@ -11,7 +11,7 @@ function refinedSearch(searchQuery, categoryId) {
     })
     .then((response) => {
       //const error = response.data.findCompletedItemsResponse[0].errorMessage[0].error[0];
-      const results = response.data.findCompletedItemsResponse[0].searchResult[0];
+      const results = response.data.findCompletedItemsResponse[0].searchResult[0].item;
       //console.log(results);
       resolve(results)
     })
